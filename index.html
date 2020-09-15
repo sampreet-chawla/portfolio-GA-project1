@@ -42,7 +42,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <!-- TODO Can include Logo here as the nav-bar brand -->
-			<a class="navbar-brand" href="#">Sampreet K Chawla</a>
+			<a class="navbar-brand" href="#">Logo</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -62,15 +62,12 @@
 							>Home <span class="sr-only">(current)</span></a
 						>
                     </li>
-                    <li class="nav-item"></li> | </li>
-					<li class="nav-item">
+                   <li class="nav-item">
 						<a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item"></li> | </li>
-					<li class="nav-item">
+                   <li class="nav-item">
 						<a class="nav-link" href="#">Projects</a>
                     </li>
-                    <li class="nav-item"></li> | </li>
                     <li class="nav-item">
 						<a class="nav-link" href="#">Contact</a>
 					</li>
@@ -97,7 +94,7 @@
 			<!-- ABOUT ME CONTAINER -->
             <section class="about-container"> 
 				<article class="about-article">
-					<div class="about-title title"><h3>About Me</h3></div>
+					<h3 class="title about-title">About Me</h3></div>
 					<p>I am an emerging full stack web developer, who is passionate about bringing ideas to life with coding. I take an agile approach to identifying challenges, finding the right solutions, and creating great user experiences. I am looking to join a collaborative and inclusive team that is focused on innovation, growth, and delighting customers.
 					</p>
 					<p class="extra-about">I have 11years rich experience including elite companies like IBM and Cognizant, in Java web development and project management. After playing the role of full-time mother and house-hold manager, I resumed the coding career with a healthcare IT Solution provider startup as a backend senior developer. I am currently a student with General Assembly pursuing a Software Engineering Immersive course to build full-stack capabilities.</p>
@@ -107,31 +104,41 @@
         
             <!-- PROJECTS -->
             <section class="projects-container"> 
+				<h3 id="title projects-title">Projects</h3>
             </section>
 
             <!-- CONTACT FORM -->
             <section class="contact-container"> 
-				<div class="title contact-title"><h3>Get In Touch</h3></div>
+				<header class="contact-header">
+					<h3 id="title contact-title">Get In Touch</h3>
+					<h4 id="contact-thanks">Thanks</h4>
+				</header>
+				<main class=contact-main>
+					<form action="" id="contact-form">
+														
+						<p class="contact name">
+							<!-- <label for="full-name">Full Name: </label> -->
+							<input type="text" placeholder="Full Name" name="full-name" id="full-name" size="25" maxlength="50">
+						</p>
+						</div>
+						<p class="contact email">
+							<!-- <label for="email">Email: </label> -->
+							<input type="email" placeholder="Email" name="email" id="email" size="25" maxlength="50">
+						</p>
+						<p class="contact message">
+							<!-- <label for="message">Message: </label> -->
+							<textarea name="message" id="message" rows="5" cols="26" maxlength="500" form="contact-form" placeholder="Message"></textarea>
+						</p>
+						<p class="contact submit">
+							<input type="submit" value="Submit">
+						</p>                
+					</form>
+				</main>
+				<!-- <div class="title contact-title"></div>
 				<div class="contact-thanks"><h4 id="contact-thanks">Thanks</h4></div>
                 <div class="contact-body">
-                    <form action="" id="contact-form">
-                        <div class="contact name">                        
-                            <!-- <label for="full-name">Full Name: </label> -->
-                            <input type="text" placeholder="Full Name" name="full-name" id="full-name" size="25" maxlength="50">
-                        </div>
-                        <div class="contact email">
-                            <!-- <label for="email">Email: </label> -->
-                            <input type="email" placeholder="Email" name="email" id="email" size="25" maxlength="50">
-                        </div>
-                        <div class="contact message">
-                            <!-- <label for="message">Message: </label> -->
-                            <textarea name="message" id="message" rows="5" cols="26" maxlength="500" form="contact-form" placeholder="Message"></textarea>
-                        </div>
-                        <div class="contact submit">
-                            <div class="submit"><input type="submit" value="Submit"></div>
-						</div>                
-                    </form>
-                </div>
+                    
+                </div> -->
             </section>
 
 		</main>
