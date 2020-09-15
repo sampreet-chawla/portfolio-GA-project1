@@ -4,10 +4,21 @@
 		/* background-color: blue; */
 	}
 
+	/* ABOUT ME */
 	.extra-about {
 		display: block;
 	}
 
+	/* PROJECT CAROUSEL */
+	.carousel-caption h5 {
+		font-size: 1.2em;
+	}
+	.carousel-caption p {
+		font-size: 1em;
+		padding-bottom: 0;
+	}
+
+	/* ALL PROJECTS */
 	.project-card {
 		display: grid;
 		grid-gap: 10px;

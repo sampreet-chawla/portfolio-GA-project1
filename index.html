@@ -58,18 +58,18 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#"
+						<a class="nav-link" href="#home"
 							>Home <span class="sr-only">(current)</span></a
 						>
                     </li>
                    <li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#about">About</a>
                     </li>
                    <li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#project-carousel">Projects</a>
                     </li>
                     <li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -92,8 +92,9 @@
 			</section>
 			
 			<!-- ABOUT ME CONTAINER -->
-            <section class="about-container"> 
+            <section class="about-container" name=""> 
 				<header class="about-header">
+					<a name="about"></a>
 					<h3 class="title about-title">About Me</h3>
 				</header>
 				<main class="about-main">
@@ -102,18 +103,64 @@
 					<p class="extra-about">I have 11years rich experience including elite companies like IBM and Cognizant, in Java web development and project management. After playing the role of full-time mother and house-hold manager, I resumed the coding career with a healthcare IT Solution provider startup as a backend senior developer. I am currently a student with General Assembly pursuing a Software Engineering Immersive course to build full-stack capabilities.</p>
 					<p class="extra-about">When I'm not coding, I like spending time with family and keeping myself fit. In my free time I like to volunteer at school and library.</p>
 				</main>
-            </section>
+			</section>
+			
+			<section class="projects-carousel-container">
+				<header class="project-carousel-header">
+					<a name="project-carousel"></a>
+					<h3 class="title about-title">About Me</h3>
+				</header>
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">					
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+					<div><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
+					<div class="carousel-caption">
+						<h5>First slide label</h5>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+					</div>
+					<div class="carousel-item">
+						<div>
+					<img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
+					<div class="carousel-caption">
+						<h5>Second slide label</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					</div>
+					<div class="carousel-item">
+					<div><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
+					<div class="carousel-caption">
+						<h5>Third slide label</h5>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+				</div>
+			</section>
         
-            <!-- PROJECTS -->
+            <!-- ALL PROJECTS -->
             <section class="projects-container"> 
 				<header class="projects-header">
-					<h3 class="title projects-title">Projects</h3>
+					<h3 class="title projects-title">ALL Projects</h3>
 				</header>
 				<main class="projects-main">
 					<article class="project-card">	
 						<div class="project-image"><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture"></div>
 						<p class="project-title" id="project-title" >Quote of the Day</p>
-						<p class="project-description" id="project-description">Fire up your day with an inspirational quote. Made with HTML5 and CSS3.</p>
+						<header>="project-description" id="project-description">Fire up your day with an inspirational quote. Made with HTML5 and CSS3.</p>
 						<p class="project-view" id="project-view"><a href="#project-url">View Here</a></p>
 					</article>
 					<article class="project-card">	
@@ -121,7 +168,7 @@
 						<p class="project-title" id="project-title" >Quote of the Day</p>
 						<p class="project-description" id="project-description">Fire up your day with an inspirational quote. Made with HTML5 and CSS3.</p>
 						<p class="project-view" id="project-view"><a href="#project-url">View Here</a></p>
-					</article> 
+					</heaicle> 
 				</main>
             </section>
 
@@ -130,6 +177,7 @@
 				<header class="contact-header">
 					<h3 id="title contact-title">Get In Touch</h3>
 					<h4 id="contact-thanks">Thanks</h4>
+					<a name="contact"></a>
 				</header>
 				<main class="contact-main">
 					<form action="" id="contact-form">
