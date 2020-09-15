@@ -45,7 +45,11 @@ hr {
 }
 
 /* ABOUT ME */
-.about-article p {
+.about-container {
+	display: grid;
+	grid-gap: 20px;
+}
+.about-main p {
 	text-align: justify;
 	text-justify: inter-word;
 	margin: 10px 20px 0 20px;
@@ -53,6 +57,60 @@ hr {
 
 .extra-about {
 	display: none;
+}
+
+/* PROJECTS */
+.projects-container {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.project-card {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		'photo photo' 'photo photo' 'title title'
+		'description description' 'view view';
+}
+
+.project-image {
+	grid-area: photo;
+}
+
+.project-image img {
+	width: 75%;
+	object-fit: cover;
+}
+
+.project-title {
+	grid-area: title;
+	margin: 10px;
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 600;
+}
+
+.project-description {
+	grid-area: description;
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 10px 10px 10 10px;
+}
+
+.project-view {
+	grid-area: view;
+	margin: 10px 10px 20px 10px;
+}
+
+.project-view a {
+	text-decoration: none;
+	color: orange;
+}
+.project-view a:hover {
+	text-decoration: underline;
+	color: red;
+	font-style: bold;
+	font-size: 15px;
 }
 
 /*  CONTACT FORM  */
