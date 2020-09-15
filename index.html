@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sampreet K Chawla</title>
+
+		<!-- META TAG FOR RESPONSIVE DESIGN -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- RESET CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		/>
+		<!-- FONT AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- BOOTSTRAP STYLES -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<!-- OUR CSS -->
+		<link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        
+        <!-- add icon link to the title -->
+        <!-- TODO Change to Personal Favicon -->
+        <link rel = "icon" href =  
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+        type = "image/x-icon"> 
+
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- TODO Can include Logo here as the nav-bar brand -->
+			<a class="navbar-brand" href="#">Sampreet K Chawla</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"
+							>Home <span class="sr-only">(current)</span></a
+						>
+                    </li>
+                    <li class="nav-item"></li> | </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item"></li> | </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item"></li> | </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+        </nav>
+
+        <main>
+
+			<!-- HOME CONTAINER -->
+            <section class="home-container">
+                <article class="home-article">
+                <div>
+                    <h1>SAMPREET KAUR CHAWLA</h1>
+                    <hr width="50px;" size="50"> 
+                    <p>Full-Stack React Web Developer</p>
+                </div>
+                <div>
+                    <p id="brand-statement">A result-oriented and quality-focused <span class="red">Full Stack Web Developer</span> with rich experience building websites and applications in React technologies.</p>
+                </div>
+                </article>
+			</section>
+			
+			<!-- ABOUT ME CONTAINER -->
+            <section class="about-container"> 
+				<article class="about-article">
+					<div class="about-title title"><h3>About Me</h3></div>
+					<p>I am an emerging full stack web developer, who is passionate about bringing ideas to life with coding. I take an agile approach to identifying challenges, finding the right solutions, and creating great user experiences. I am looking to join a collaborative and inclusive team that is focused on innovation, growth, and delighting customers.
+					</p>
+					<p class="extra-about">I have 11years rich experience including elite companies like IBM and Cognizant, in Java web development and project management. After playing the role of full-time mother and house-hold manager, I resumed the coding career with a healthcare IT Solution provider startup as a backend senior developer. I am currently a student with General Assembly pursuing a Software Engineering Immersive course to build full-stack capabilities.</p>
+					<p class="extra-about">When I'm not coding, I like spending time with family and keeping myself fit. In my free time I like to volunteer at school and library.</p>
+				</article>
+            </section>
+        
+            <!-- PROJECTS -->
+            <section class="projects-container"> 
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section class="contact-container"> 
+				<div class="title contact-title"><h3>Get In Touch</h3></div>
+				<div class="contact-thanks"><h4 id="contact-thanks">Thanks</h4></div>
+                <div class="contact-body">
+                    <form action="" id="contact-form">
+                        <div class="contact name">                        
+                            <!-- <label for="full-name">Full Name: </label> -->
+                            <input type="text" placeholder="Full Name" name="full-name" id="full-name" size="25" maxlength="50">
+                        </div>
+                        <div class="contact email">
+                            <!-- <label for="email">Email: </label> -->
+                            <input type="email" placeholder="Email" name="email" id="email" size="25" maxlength="50">
+                        </div>
+                        <div class="contact message">
+                            <!-- <label for="message">Message: </label> -->
+                            <textarea name="message" id="message" rows="5" cols="26" maxlength="500" form="contact-form" placeholder="Message"></textarea>
+                        </div>
+                        <div class="contact submit">
+                            <div class="submit"><input type="submit" value="Submit"></div>
+						</div>                
+                    </form>
+                </div>
+            </section>
+
+		</main>
+
+		<footer>&copy; Made by Sampreet K Chawla</footer>
+
+		<!-- THE STYLES  -->
+		<!-- ******************************************** -->
+
+		<!-- JQUERY -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- BOOTSTRAP JS FILES -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- OUR JS FILES -->
+		<script src="js/app.js"></script>
+	</body>
+</html>
