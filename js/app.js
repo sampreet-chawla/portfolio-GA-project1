@@ -1,26 +1,14 @@
-console.log('hello - ' + $);
-
 console.log('main.js');
 console.log('jQuery - ', $);
 
-// let sheetUrl =
-// 'https://docs.google.com/spreadsheets/d/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/edit?usp=sharing';
-
-// recognize the sheet id
-// let sheetId = '1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ';
-
-//let sheetAsJSON = "https://spreadsheets.google.com/feeds/list/ YOUR ID GOES HERE /od6/public/values?alt=json"
 let sheetAsJSON =
 	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json'; // sampreet
-
-let projects = [];
-let isProjectAvailable = false;
 
 $.ajax({ url: sheetAsJSON }).then((data) => {
 	console.log('This is data: ', data);
 	console.log('This is data: ', data.feed.entry[0].gsx$title.$t);
 
-	projects = data.feed.entry.map((project) => {
+	let projects = data.feed.entry.map((project) => {
 		return {
 			title: project.gsx$title.$t,
 			image: project.gsx$image.$t,
@@ -30,39 +18,22 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 	});
 
 	console.log(' projects - ', projects);
+	renderProjects(projects);
 });
 
-// const renderProjects = () => {
-// const $li = $(
-// `<li class='circle' style='background-color: ${color}'></li>`
-// 	if (!isProjectAvailable) {
-// 		// for (project of projects) {
-// 		// 	console.log('project -  : ' + project);
-// 		// 	const $div = $('<div>').addClass('project');
-// 		// 	const $heading = $('<h3>').text(project.title);
-// 		// 	$div.append($heading);
-// 		// 	const $image = $('<img>')
-// 		// 		.attr('src', project.image)
-// 		// 		.attr('width', '45%')
-// 		// 		.attr('alt', project.title + ' picture');
-// 		// 	$div.append($image);
-// 		// 	const $para = $('<p>').text(project.description);
-// 		// 	$div.append($para);
-
-// 		// 	$('.projects-container').append($div);
-// 		// 	$('#hideProjectButton').css('display', 'block');
-// 		// 	$('#showProjectButton').css('display', 'none');
-// 		// }
-
-// 		for (project of projects) {
-// 			console.log('project -  : ' + project);
-// 		}
-// 		isProjectAvailable = true;
-// 		console.log('Projects rendered... ');
-// 	}
-// };
-
-// renderProjects();
+const renderProjects = (projects) => {
+	console.log('Rendering projects...', projects);
+	for (project of projects) {
+		const $article = $(`<article class="project-card">	
+						<div class="project-image"><img src="${project.image}" alt="${project.title} picture"></div>
+						<p class="project-title" id="project-title" >${project.title}</p>
+						<p class="project-description" id="project-description">${project.description}</p>
+						<p class="project-view" id="project-view"><a href="${project.url}">View Here</a></p>
+					</article>`);
+		$('.projects-main').append($article);
+		console.log('Projects rendered...');
+	}
+};
 
 $('form').on('submit', (event) => {
 	event.preventDefault();
