@@ -1,0 +1,21 @@
+/* RESPONSIVE DESIGN FOR TABLET */
+@media only screen and (min-width: 768px) {
+	body {
+		/* background-color: blue; */
+	}
+
+	.extra-about {
+		display: block;
+	}
+
+	.contact-body {
+		display: flex;
+	}
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP */
+@media only screen and (min-width: 1024px) {
+	body {
+		/* background-color: rgb(111, 190, 111); */
+	}
+}

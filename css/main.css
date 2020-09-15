@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	border: 1px solid;
+}
+
+body {
+	/* background-color: black; */
+	text-align: center;
+	/* color: #fffcf2; */
+	box-sizing: border-box;
+	border: 1px solid;
+	margin: 0 auto;
+}
+
+.home-article {
+	text-align: left;
+	padding: 10px;
+	margin: 20px;
+}
+
+.home-article h1 {
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+hr {
+	/* color: #fffcf2; */
+	background-color: red;
+	margin: 0px;
+}
+
+.red {
+	color: #eb5e28;
+}
+
+/* ABOUT ME */
+.about-article p {
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 10px 10px 0 10px;
+}
+
+.extra-about {
+	display: none;
+}
+
+/*  CONTACT FORM  */
+
+.contact-container,
+.contact-body {
+	display: grid;
+	justify-content: center;
+	grid-gap: 20px;
+}
+
+.contact-body {
+	padding: 20px;
+}
+
+label {
+	text-align: left;
+}
+.submit {
+	background-color: #fffcf2;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* #contact-thanks {
+	display: none;
+} */

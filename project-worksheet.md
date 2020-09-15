@@ -2,34 +2,30 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+This schedule will be used to keep track of my progress throughout the week and align with squad's expectations.
 
 | Day   | Deliverable                                  | Status     |
 | ----- | -------------------------------------------- | ---------- |
-| Day 1 | Project Description                          | Incomplete |
-| Day 1 | Wireframes / Priority Matrix / Timeline      | Incomplete |
+| Day 1 | Project Description                          | Complete   |
+| Day 1 | Wireframes / Priority Matrix / Timeline      | Complete   |
 | Day 3 | Core Application Structure (HTML, CSS, etc.) | Incomplete |
 | Day 4 | MVP & Bug Fixes                              | Incomplete |
 | Day 5 | Final Touches                                | Incomplete |
-| Day 6 | Present                                      | Incomplete |
+| Day 5 | Present                                      | Incomplete |
 
 ## Project Description
 
-This project is a Personal Portfolio of Sampreet K Chawla. It has 4 sections - Landing Page, About Me, Projects & Skills, Get In Touch
+This project is a Personal Portfolio of Sampreet K Chawla. It has 4 sections - Landing Page, About Me, Projects, Get In Touch
 
 ## Google Sheet
 
-[Sampreet Google Sheet with Project Information](https://docs.google.com/spreadsheets/d/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/edit#gid=0)
+[Portfolio - Google Sheet with Project Information](https://docs.google.com/spreadsheets/d/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/edit#gid=0)
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.
-
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg) - TBD
-- [Tablet](https://i.imgur.com/xpOWo0E.jpg) - TBD
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg) - TBD
+- [Mobile Look](https://res.cloudinary.com/dreamer123/image/upload/v1600106126/Sampreet-SEIR_831-unit1-portfolio/mobile-portfolio-wireframe_bhdeh9.png)
+- [Tablet Look](https://res.cloudinary.com/dreamer123/image/upload/v1600106126/Sampreet-SEIR_831-unit1-portfolio/tablet-portfolio-wireframe_zdeuwe.png)
+- [Desktop Look](https://res.cloudinary.com/dreamer123/image/upload/v1600106126/Sampreet-SEIR_831-unit1-portfolio/desktop-portfolio-wireframe_k4fvn5.png)
 
 Wireframing Resources:
 
@@ -38,7 +34,7 @@ Wireframing Resources:
 
 ## Time/Priority Matrix
 
-[Sampreet Time-Priority Matrix](hhttps://res.cloudinary.com/dreamer123/image/upload/v1600096508/Sampreet-SEIR_831-unit1-portfolio/Sampreet-Portfolio-Time-Priority-Matrix_uzfayl.png) covers MVP list.
+[Portfolio's Time-Priority Matrix](hhttps://res.cloudinary.com/dreamer123/image/upload/v1600096508/Sampreet-SEIR_831-unit1-portfolio/Sampreet-Portfolio-Time-Priority-Matrix_uzfayl.png) covers MVP list.
 
 ### MVP/PostMVP
 
@@ -49,20 +45,20 @@ Wireframing Resources:
 - Basic Nav Nar
 - Google API Integration for Projects
 - Content Addition
-- Contact Me / Get In Touch Form
+- Get In Touch Form
 - Responsive Design
 - Make own Logo, Icons and Images
 - Projects touch-up / baseline
 
 #### PostMVP
 
-- Contact Me Form Validation
-- Bootstrap Theme Integration (opt)
-- Materialize Integration (opt)
-- Testimonials from Prev Work
-- Top Nav Animation on Scroll
-- Skills Carousal
+- Form Validation
+- Bootstrap (opt)
+- Materialize (opt)
+- Project and Skills Carousal
 - Canvas Particles
+- Testimonials
+- Top Nav Animation on Scroll
 
 ## Functional Components
 
@@ -92,10 +88,10 @@ Time frames are also key in the development cycle. You have limited time to code
 | Form Validation   |    H     |      2hr       |     hr      |
 | Bootstrap         |    H     |      4hr       |     hr      |
 | Materialize       |    H     |      4hr       |     hr      |
-| Testimonials      |    M     |      3hr       |     hr      |
+| Projects Carousal |    H     |      4hr       |     hr      |
 | Top Nav Animation |    L     |      3hr       |     hr      |
-| Skills Carousal   |    M     |      4hr       |     hr      |
 | Canvas Particles  |    L     |     0.5hr      |     hr      |
+| Testimonials      |    M     |      3hr       |     hr      |
 | Total             |    H     |    20.5hrs     |     hrs     |
 
 ## Additional Libraries
