@@ -4,23 +4,27 @@ console.log('jQuery - ', $);
 let sheetAsJSON =
 	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json'; // sampreet
 
-$.ajax({ url: sheetAsJSON }).then((data) => {
-	console.log('This is data: ', data);
-	console.log('This is data: ', data.feed.entry[0].gsx$title.$t);
+$.ajax({ url: sheetAsJSON })
+	.then((data) => {
+		console.log('This is data: ', data);
+		console.log('This is data: ', data.feed.entry[0].gsx$title.$t);
 
-	let projects = data.feed.entry.map((project) => {
-		return {
-			title: project.gsx$title.$t,
-			image: project.gsx$image.$t,
-			description: project.gsx$description.$t,
-			url: project.gsx$url.$t,
-		};
+		let projects = data.feed.entry.map((project) => {
+			return {
+				title: project.gsx$title.$t,
+				image: project.gsx$image.$t,
+				description: project.gsx$description.$t,
+				url: project.gsx$url.$t,
+			};
+		});
+
+		console.log(' projects - ', projects);
+		return projects;
+	})
+	.then((projects) => {
+		renderProjectCarousel(projects);
+		renderAllProjects(projects);
 	});
-
-	console.log(' projects - ', projects);
-	renderProjectCarousel(projects);
-	renderAllProjects(projects);
-});
 
 const renderProjectCarousel = (projects) => {
 	console.log('Rendering project carousel...', projects);
@@ -46,7 +50,7 @@ const renderProjectCarousel = (projects) => {
 
 const renderAllProjects = (projects) => {
 	console.log('Rendering all projects...', projects);
-	for (project of projects) {
+	projects.forEach((project) => {
 		const $article = $(`<article class="project-card">	
 						<div class="project-image"><img src="${project.image}" alt="${project.title} picture"></div>
 						<p class="project-title" id="project-title" >${project.title}</p>
@@ -55,7 +59,7 @@ const renderAllProjects = (projects) => {
 					</article>`);
 		$('.projects-main').append($article);
 		console.log('All Projects rendered...');
-	}
+	});
 };
 
 $('form').on('submit', (event) => {
