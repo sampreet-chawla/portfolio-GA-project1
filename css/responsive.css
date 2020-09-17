@@ -19,13 +19,39 @@
 	}
 
 	/* ALL PROJECTS */
-	.project-card {
+
+	.projects-container {
+		display: grid;		g
+		grid-gap: 20px;
+	}
+
+	.projects-main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		justify-items: center;
+		align-items: center;
+		grid-gap: 15px;
+	}
+
+	.card {
+		box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4);
+	}
+
+	.card-img-top {
+		height: 280px;
+		object-fit: cover;
+	}
+
+	
+
+	/* .project-card {
 		display: grid;
 		grid-gap: 10px;
 		grid-template-areas: 'photo title' 'photo description' 'photo view';
 		grid-column-gap: 20px;
 		margin: 15px 10px 15px 10px;
-	}
+	} */
 
 	/* .contact-body {
 		display: flex;
@@ -40,8 +66,8 @@
 
 	.projects-main {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
 	}
 
 	.project-card {

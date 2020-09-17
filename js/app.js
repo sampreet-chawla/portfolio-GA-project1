@@ -2,7 +2,7 @@ console.log('main.js');
 console.log('jQuery - ', $);
 
 let sheetAsJSON =
-	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json'; // sampreet
+	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json'; 
 
 $.ajax({ url: sheetAsJSON })
 	.then((data) => {
@@ -14,6 +14,7 @@ $.ajax({ url: sheetAsJSON })
 				title: project.gsx$title.$t,
 				image: project.gsx$image.$t,
 				description: project.gsx$description.$t,
+				techs: project.gsx$techs.$t,
 				url: project.gsx$url.$t,
 			};
 		});
@@ -40,6 +41,7 @@ const renderProjectCarousel = (projects) => {
 					<div class="carousel-caption">
 						<h5>${project.title}</h5>
 						<p>${project.description}</p>
+						<p>${project.techs}</p>
 						<p class="project-view" id="project-view"><a href="${project.url}" target="_blank">View Here</a></p>
 					</div>
 					</div>`);
@@ -67,6 +69,7 @@ const renderAllProjects = (projects) => {
 			<div class="card-body">
 				<h5 class="card-title">${project.title}</h5>
 				<p class="card-text">${project.description}</p>
+				<p class="card-text">${project.techs}</p>
 				<a href="${project.url}" class="btn btn-primary" target="_blank">View Project</a>
 			</div>
 		</div>`

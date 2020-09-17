@@ -17,6 +17,7 @@ body main {
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
+	row-gap: 40px;
 }
 
 /* .collapse .navbar-collapse {
@@ -76,6 +77,21 @@ section header .title {
 	font-family: 'Fira Sans', sans-serif;
 	font-style: italic;
 	font-size: 35px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* All Buttons */
+.btn-primary,
+.btn-submit {
+	background-color: #eb5e28;
+	font-style: bold;
+	color: white;
+	border-color: #eb5e28;
+	box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.4);
+	padding: 10px 20px;
+	display: inline-block;
+	border-radius: 12px;
 }
 
 /* ABOUT ME */
@@ -102,12 +118,13 @@ section header .title {
 }
 
 /* ALL PROJECTS */
+
 .projects-container {
-	display: grid;
-	grid-gap: 20px;
+	display: none;
 }
 
-.project-card {
+/*
+.card{
 	display: grid;
 	grid-gap: 10px;
 	grid-template-areas:
@@ -153,11 +170,14 @@ section header .title {
 	color: red;
 	font-style: bold;
 	font-size: 15px;
-}
+} */
 
 /*  CONTACT FORM  */
 
 .contact-container {
+	background-color: black;
+	color: white;
+
 	display: grid;
 	grid-template-rows: 1fr 3fr;
 	grid-template-columns: 1fr;
@@ -169,8 +189,12 @@ section header .title {
 .contact-main {
 	display: flex;
 	flex-direction: column;
-	align-content: space-between;
-	padding: 10px;
+	/* align-content: space-between; */
+	margin: 10px;
+}
+
+.title .contact-title {
+	padding: 50px;
 }
 
 label {
@@ -185,6 +209,9 @@ label {
 
 #contact-thanks {
 	display: none;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
 	/* margin: 0;
 	line-height-step: 0; */
 }

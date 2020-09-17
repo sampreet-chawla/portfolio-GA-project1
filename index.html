@@ -98,10 +98,8 @@
 			</section>
 			
 			<!-- ABOUT ME CONTAINER -->
-            <section class="about-container" name=""> 
-				<header class="about-header">
-					<a name="about"></a>
-					<h3 class="title about-title">About Me</h3>
+            <section class="about-container" id="about"> 
+				<header class="about-header">				<h3 class="title about-title">About Me</h3>
 				</header>
 				<main class="about-main">
 					<p>I am an emerging full stack web developer, who is passionate about bringing ideas to life with coding. I take an agile approach to identifying challenges, finding the right solutions, and creating great user experiences. I am looking to join a collaborative and inclusive team that is focused on innovation, growth, and delighting customers.
@@ -112,7 +110,7 @@
 				<button id="myTopBtn" title="Go to top">&#8679;</button>			
 			</section>
 			
-			<section class="projects-carousel-container">
+			<section class="projects-carousel-container" id="project-carousel">
 				<header class="project-carousel-header">
 					<a name="project-carousel"></a>
 					<h3 class="title project-title">Projects</h3>
@@ -164,23 +162,11 @@
 					<h3 class="title projects-title">ALL Projects</h3>
 				</header>
 				<main class="projects-main">
-					<!-- <article class="project-card">	
-						<div class="project-image"><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture"></div>
-						<p class="project-title" id="project-title" >Quote of the Day</p>
-						<p class="project-description" id="project-description">Fire up your day with an inspirational quote. Made with HTML5 and CSS3.</p>
-						<p class="project-view" id="project-view"><a href="#project-url" target="_blank">View Here</a></p>
-					</article>
-					<article class="project-card">	
-						<div class="project-image"><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture"></div>
-						<p class="project-title" id="project-title" >Quote of the Day</p>
-						<p class="project-description" id="project-description">Fire up your day with an inspirational quote. Made with HTML5 and CSS3.</p>
-						<p class="project-view" id="project-view"><a href="#project-url" target="_blank">View Here</a></p>
-					</article>  -->
 				</main>
             </section>
 
             <!-- CONTACT FORM -->
-            <section class="contact-container"> 
+            <section class="contact-container" id="contact"> 
 				<header class="contact-header">
 					<h3 class="title contact-title">Get In Touch</h3>
 					<h4 id="contact-thanks">Thanks</h4>
@@ -203,7 +189,7 @@
 							<textarea name="message" id="message" rows="5" cols="26" maxlength="500" form="contact-form" placeholder="Message"></textarea>
 						</p>
 						<p class="contact submit">
-							<input type="submit" value="Submit">
+							<input type="submit" value="Submit" class="btn-submit">
 						</p>                
 					</form>
 				</main>
