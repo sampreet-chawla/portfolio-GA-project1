@@ -50,13 +50,27 @@ const renderProjectCarousel = (projects) => {
 
 const renderAllProjects = (projects) => {
 	console.log('Rendering all projects...', projects);
+	// projects.forEach((project) => {
+	// 	const $article = $(`<article class="project-card">
+	// 					<div class="project-image"><img src="${project.image}" alt="${project.title} picture"></div>
+	// 					<p class="project-title" id="project-title" >${project.title}</p>
+	// 					<p class="project-description" id="project-description">${project.description}</p>
+	// 					<p class="project-view" id="project-view"><a href="${project.url}" target="_blank">View Here</a></p>
+	// 				</article>`);
+	// 	$('.projects-main').append($article);
+	// 	console.log('All Projects rendered...');
+	// });
 	projects.forEach((project) => {
-		const $article = $(`<article class="project-card">	
-						<div class="project-image"><img src="${project.image}" alt="${project.title} picture"></div>
-						<p class="project-title" id="project-title" >${project.title}</p>
-						<p class="project-description" id="project-description">${project.description}</p>
-						<p class="project-view" id="project-view"><a href="${project.url}" target="_blank">View Here</a></p>
-					</article>`);
+		const $article = $(
+			`<div class="card" style="width: 18rem;">
+			<img src="${project.image}" class="card-img-top" alt="{project.title} picture">
+			<div class="card-body">
+				<h5 class="card-title">${project.title}</h5>
+				<p class="card-text">${project.description}</p>
+				<a href="${project.url}" class="btn btn-primary" target="_blank">View Project</a>
+			</div>
+		</div>`
+		);
 		$('.projects-main').append($article);
 		console.log('All Projects rendered...');
 	});
@@ -78,3 +92,57 @@ $('form').on('submit', (event) => {
 
 	$(event.currentTarget).trigger('reset');
 });
+
+/////////////////////////
+// For Goto Top Button
+window.onscroll = function () {
+	scrollFunction();
+};
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById('myTopBtn').style.display = 'block';
+	} else {
+		document.getElementById('myTopBtn').style.display = 'none';
+	}
+}
+var $root = $('html, body');
+$(document).on('click', 'a[href^="#"]', function (event) {
+	event.preventDefault();
+	$root.animate({ scrollTop: $($.attr(this, 'href')).offset().top }, 800);
+});
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = 'none';
+	}
+};
+$('#myTopBtn').click(function () {
+	$root.animate({ scrollTop: 0 }, 800);
+});
+$(() => {
+	var $scroller = $('#site-wrapper');
+	$('a[href^="#"]').on('click', function (e) {
+		e.preventDefault();
+		var target = this.hash;
+		var $target = $(target);
+		$scroller.stop().animate(
+			{
+				scrollTop:
+					$target.offset().top - $scroller.offset().top + $scroller.scrollTop(),
+			},
+			900,
+			'swing',
+			function () {
+				window.location.hash = target;
+			}
+		);
+	});
+});
+var modal = document.getElementById('myModal');
+var btn = document.getElementById('myBtn');
+var span = document.getElementsByClassName('close')[0];
+btn.onclick = function () {
+	modal.style.display = 'block';
+};
+span.onclick = function () {
+	modal.style.display = 'none';
+};

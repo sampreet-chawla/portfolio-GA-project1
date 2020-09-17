@@ -4,9 +4,6 @@
 }
 
 body {
-	/* background-color: black; */
-	/* color: #fffcf2; */
-
 	text-align: center;
 	margin: 0 auto;
 
@@ -19,27 +16,66 @@ body main {
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-columns: 1fr;
+	grid-gap: 20px;
 }
 
-.home-article {
+/* .collapse .navbar-collapse {
+	justify-content: flex-end;
+} */
+
+.navbar .navbar-expand-lg .navbar-dark {
+	background-color: black;
+}
+
+.home-container {
+	background-color: black;
+	/* background-image: url('https://res.cloudinary.com/dreamer123/image/upload/v1600315307/Sampreet-SEIR_831-unit1-portfolio/black-background_jbztq8.png');
+	background-size: cover; */
+
+	color: #fffcf2;
 	text-align: left;
-	padding: 10px;
-	margin: 20px;
+	padding: 50px 20px 50px 30px;
+	width: 100% !important;
+	display: flex;
+	justify-content: space-between;
 }
 
-.home-article h1 {
-	font-size: 20px;
-	margin-bottom: 0px;
+.home .title {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 50px;
+	margin: 30px 0 20px 0;
+	font-weight: bolder;
+}
+
+.home .sub-title {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.home .brand-statement {
+	font-size: 25px;
+	margin: 30px 0px;
+	padding: 20px 0px;
+	font-style: italic;
 }
 
 hr {
 	/* color: #fffcf2; */
-	background-color: red;
+	background-color: #eb5e28;
 	margin: 0px;
+	width: 30%;
+	height: 0.25em;
 }
 
 .red {
 	color: #eb5e28;
+}
+
+/* All Titles */
+section header .title {
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+	font-size: 35px;
 }
 
 /* ABOUT ME */
@@ -151,4 +187,25 @@ label {
 	display: none;
 	/* margin: 0;
 	line-height-step: 0; */
+}
+
+#myTopBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: grey; /* Set a background color */
+	opacity: 0.9;
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 2px 13px 5px 13px;
+	border-radius: 100%;
+	font-size: 24px; /* Increase font size */
+}
+
+#myTopBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
 }
