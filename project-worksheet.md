@@ -84,10 +84,10 @@ Wireframing Resources:
 | Google API Integration     |    H     |      3hrs      |    2hrs     |
 | About Me(Content Addition) |    M     |      3hr       |    2hrs     |
 | Get in Touch Form          |    M     |     2.5hrs     |    3hrs     |
-| Responsive Design          |    H     |      3hrs      |   4.5hrs    |
+| Responsive Design          |    H     |      3hrs      |    5hrs     |
 | Make own Logo/Icons/Images |    L     |      3hrs      |    3hrs     |
 | Project baseline           |    M     |      3hrs      |   2.5hrs    |
-| Total                      |    H     |     22hrs      |   23.5hrs   |
+| Total                      |    H     |     22hrs      |    25hrs    |
 
 #### PostMVP
 
@@ -97,10 +97,10 @@ Wireframing Resources:
 | Bootstrap         |    H     |      4hrs      |    6hrs     |
 | ~~Materialize~~   |  ~~H~~   |    ~~4hr~~     |   ~~hr~~    |
 | Projects Carousal |    H     |      4hrs      |   3.5hrs    |
-| Top Nav Animation |    L     |      3hrs      |    3hrs     |
+| Top Nav Animation |    L     |      3hrs      |    0hrs     |
 | Canvas Particles  |    L     |     0.5hrs     |     0hr     |
 | Testimonials      |    M     |      3hrs      |     0hr     |
-| Total             |    H     |    20.5hrs     |   14.5hrs   |
+| Total             |    H     |    20.5hrs     |   11.5hrs   |
 
 ## Additional Libraries
 
@@ -114,6 +114,11 @@ Wireframing Resources:
 - [Coolers.co](https://coolors.co/) For Color Scheme
 - [onlinepngtools](https://onlinepngtools.com/create-transparent-png) - For transparent logo
 - [Cloudinary](https://cloudinary.com/) - Cloud store for images
+
+## Portfolio Samples Referenced
+
+- [lianapenn.com](https://www.lianapenn.com/) - Like the particles animation on the home page, and the fixed Go-to-Top button.
+- [sebkay.com](http://sebkay.com/) - Admire the page divide patterns, matte finish, and inclusion of testimonials (after every project). Maybe I can have a separate section for testimonials alone.
 
 ## Code Snippet
 
@@ -140,11 +145,7 @@ const renderAllProjects = (projects) => {
 
 ## Issues and Resolutions
 
-TBD - Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
-**RESOLUTION**: Missing comma after first object in sources {} object
-
-
+- **ERROR**: index.html: Home link in Nav-bar for Desktop version
+  **Resolution**: Was not able to find the solution for Bootstrap Navbar. Added Go-to-Top functionality from [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+- **ERROR**: responsive.css: Responsive Design for Tablet and Desktop Versions took more time than expected. They get affected with any slight change in formatting / positioning of elements.
+  **Resolution**: responsive.css: Used the Developer Tools to play around the css properties to arrive at the proper positioning. Will have to keep extra bandwidth for the future projects.
