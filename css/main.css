@@ -15,8 +15,8 @@ body main {
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-columns: 1fr;
-	/* grid-gap: 20px; */
-	/* row-gap: 40px; */
+	/* grid-gap: 20px;
+	row-gap: 40px; */
 }
 
 /* .collapse .navbar-collapse {
@@ -82,7 +82,7 @@ section header .title {
 	font-family: 'Fira Sans', sans-serif;
 	font-style: italic;
 	font-size: 40px;
-	padding-top: 50px;
+	padding-top: 150px;
 	padding-bottom: 20px;
 }
 
@@ -106,6 +106,10 @@ section header .title {
 	grid-gap: 20px;
 	padding: 0px 30px;
 }
+
+.about-header {
+	margin-top: 40px;
+}
 .about-main p {
 	text-align: justify;
 	text-justify: inter-word;
@@ -121,8 +125,13 @@ section header .title {
 
 /* PROJECTS CAROUSEL */
 
+.projects-carousel-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 3fr 1fr;
+}
 .project-carousel-header {
-	margin-top: 40px;
+	margin-top: 130px;
 }
 
 .carousel-inner img {
@@ -156,7 +165,7 @@ section header .title {
 	color: white;
 
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: auto 1fr;
 	grid-template-columns: 1fr;
 	justify-content: center;
 	grid-gap: 10px;
@@ -200,6 +209,7 @@ textarea {
 }
 
 .social-media {
+	padding-top: 10px;
 	font-size: 20px;
 	font-style: bold;
 	font-weight: 600;
