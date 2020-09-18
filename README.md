@@ -1,9 +1,19 @@
-# seir-831-project-1-portfolio
-GA SEIR -831 Unit1 - Project Portfolio
+# Sampreet K Chawla - Project Portfolio
 
-#### This is Sampreet Chawla's Personal Project Portfolio (In Progress) with the folllowing sections - 
-- Landing Page
-- About Me
-- Projects & Skills
-- Testimonials (Optional)
-- Contact Me
+As a part of GA SEIR -831 Unit1 - Project Portfolio
+
+#### This is my Personal Project Portfolio with the following sections -
+
+- Home Page - It has the my full name, aspiring job title, and the brand statement
+- About Me - A brief to get to know about me
+- Projects Carousel - Carousel with my favorite projects
+- All Projects - All of my projects displayed in 2 columns (Tablet) or 3 columns (Laptop)
+- Contact - To reach me...
+
+## Futures Plans
+
+Addition of -
+
+- Skills
+- Resume
+- Testimonials
