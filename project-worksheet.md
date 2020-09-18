@@ -1,5 +1,17 @@
 # Project Overview
 
+## Sampreet K Chawla - Project Portfolio
+
+As a part of GA SEIR -831 Unit1 - Project Portfolio
+
+#### This is my Personal Project Portfolio with the following sections -
+
+- Home Page - It has the my full name, aspiring job title, and the brand statement
+- About Me - A brief to get to know about me
+- Projects Carousel - Carousel with my favorite projects
+- All Projects - All of my projects displayed in 2 columns (Tablet) or 3 columns (Laptop)
+- Contact - To reach me...
+
 ## Project Schedule
 
 This schedule will be used to keep track of my progress throughout the week and align with squad's expectations.
@@ -134,3 +146,5 @@ TBD - Use this section to list of all major issues encountered and their resolut
 
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
 **RESOLUTION**: Missing comma after first object in sources {} object
+
+

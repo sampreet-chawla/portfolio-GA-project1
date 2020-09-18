@@ -5,6 +5,16 @@
 		justify-content: space-between;
 	}
 
+	/* HOME */
+
+	.home .title {
+		margin: 50px 0 0px 0;
+	}
+	.home .sub-title {
+		margin-bottom: 30px;
+	}
+
+
 	/* ABOUT ME */
 
 	.about-container {
@@ -13,14 +23,23 @@
 
 	.about-main p {
 		font-size: 20px;
-		padding: 0 30px;
+		padding: 20px 30px ;
 	}
 
 	.extra-about {
 		display: block;
 	}
 
+	.extra-about:last-child {
+		padding-bottom: 20px;
+	}
+
 	/* PROJECT CAROUSEL */
+
+	.carousel-inner img {
+		height: 600px;
+    }
+
 	.carousel-caption h5 {
 		font-size: 1.2em;
 	}
@@ -99,6 +118,12 @@
 		padding: 10px 30px 50px 30px;
 	}
 
+	/*  Project Carousel */
+	.carousel-inner img {
+		height: 650px;
+		width: auto;
+    }
+
 	/* ALL PROJECTS */
 
 	.projects-main {
@@ -135,7 +160,9 @@
 
 	/* Contact Form */
 
-	
+	.contact-header {
+		padding-top: 150px;
+	}
 	
 	.contact input,
 	textarea, p {

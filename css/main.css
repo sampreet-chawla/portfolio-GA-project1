@@ -15,8 +15,8 @@ body main {
 	display: grid;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-columns: 1fr;
-	grid-gap: 20px;
-	row-gap: 40px;
+	/* grid-gap: 20px; */
+	/* row-gap: 40px; */
 }
 
 /* .collapse .navbar-collapse {
@@ -37,7 +37,7 @@ body main {
 
 	color: #fffcf2;
 	text-align: center;
-	padding: 50px 20px 50px 30px;
+	padding: 100px 30px 100px 30px;
 	width: 100% !important;
 	display: flex;
 	justify-content: space-between;
@@ -49,13 +49,13 @@ body main {
 	margin: 30px 0 20px 0;
 	font-weight: bolder;
 	margin-bottom: 0;
-	padding: 0px 30px;
+	padding: 10px 30px 0ox 30px;
 }
 
 .home .sub-title {
 	font-size: 30px;
 	margin-bottom: 30px;
-	padding: 0px 30px;
+	padding: 0px 30px 20px 30px;
 }
 
 .home .brand-statement {
@@ -109,7 +109,7 @@ section header .title {
 .about-main p {
 	text-align: justify;
 	text-justify: inter-word;
-	margin: 10px 20px 0 20px;
+	margin: 10px 20px 0 60px;
 	font-family: 'Fira Sans', sans-serif;
 	font-style: italic;
 	font-size: 20px;
@@ -120,6 +120,14 @@ section header .title {
 }
 
 /* PROJECTS CAROUSEL */
+
+.project-carousel-header {
+	margin-top: 40px;
+}
+
+.carousel-inner img {
+	height: 400px;
+}
 
 .carousel-caption {
 	background-color: rgba(0, 0, 0, 0.65);
@@ -148,7 +156,7 @@ section header .title {
 	color: white;
 
 	display: grid;
-	grid-template-rows: 1fr 3fr;
+	grid-template-rows: 1fr 2fr;
 	grid-template-columns: 1fr;
 	justify-content: center;
 	grid-gap: 10px;
@@ -165,15 +173,13 @@ section header .title {
 	flex-direction: column;
 	margin: 10px;
 	padding: 10px;
+	padding-bottom: 10px;
 }
 
 .title .contact-title {
 	padding: 50px 50px 0px 50px;
 }
 
-label {
-	text-align: left;
-}
 .contact .submit {
 	background-color: #fffcf2;
 	padding: 5px 20px;
