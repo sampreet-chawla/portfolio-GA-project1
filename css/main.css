@@ -28,13 +28,18 @@ body main {
 	background-color: black;
 }
 
+/* .navbar-expand-lg .navbar-collapse {
+	display: flex;
+	justify-content: flex-end !important;
+} */
+
 .home-container {
 	background-color: black;
 	/* background-image: url('https://res.cloudinary.com/dreamer123/image/upload/v1600315307/Sampreet-SEIR_831-unit1-portfolio/black-background_jbztq8.png');
 	background-size: cover; */
 
 	color: #fffcf2;
-	text-align: left;
+	text-align: center;
 	padding: 50px 20px 50px 30px;
 	width: 100% !important;
 	display: flex;
@@ -46,11 +51,14 @@ body main {
 	font-size: 50px;
 	margin: 30px 0 20px 0;
 	font-weight: bolder;
+	margin-bottom: 0;
+	padding: 0px 30px;
 }
 
 .home .sub-title {
 	font-size: 30px;
 	margin-bottom: 30px;
+	padding: 0px 30px;
 }
 
 .home .brand-statement {
@@ -63,9 +71,10 @@ body main {
 hr {
 	/* color: #fffcf2; */
 	background-color: #eb5e28;
-	margin: 0px;
-	width: 30%;
+	padding-left: 35%;
+	width: 20%;
 	height: 0.25em;
+	box-align: center;
 }
 
 .red {
@@ -76,7 +85,7 @@ hr {
 section header .title {
 	font-family: 'Fira Sans', sans-serif;
 	font-style: italic;
-	font-size: 35px;
+	font-size: 40px;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
@@ -97,12 +106,17 @@ section header .title {
 /* ABOUT ME */
 .about-container {
 	display: grid;
+	align-content: center;
 	grid-gap: 20px;
+	padding: 0px 30px;
 }
 .about-main p {
 	text-align: justify;
 	text-justify: inter-word;
 	margin: 10px 20px 0 20px;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
 }
 
 .extra-about {
@@ -117,60 +131,19 @@ section header .title {
 	display: block;
 }
 
+.carousel-caption p {
+	margin-bottom: 0;
+}
+
+.carousel-caption p a {
+	margin-bottom: 0;
+	color: #eb5e28;
+}
 /* ALL PROJECTS */
 
 .projects-container {
 	display: none;
 }
-
-/*
-.card{
-	display: grid;
-	grid-gap: 10px;
-	grid-template-areas:
-		'photo photo' 'photo photo' 'title title'
-		'description description' 'view view';
-}
-
-.project-image {
-	grid-area: photo;
-}
-
-.project-image img {
-	width: 75%;
-	object-fit: cover;
-}
-
-.project-title {
-	grid-area: title;
-	margin: 10px;
-	font-size: 20px;
-	font-style: bold;
-	font-weight: 600;
-}
-
-.project-description {
-	grid-area: description;
-	text-align: justify;
-	text-justify: inter-word;
-	padding: 10px 10px 10 10px;
-}
-
-.project-view {
-	grid-area: view;
-	margin: 10px 10px 20px 10px;
-}
-
-.project-view a {
-	text-decoration: none;
-	color: orange;
-}
-.project-view a:hover {
-	text-decoration: underline;
-	color: red;
-	font-style: bold;
-	font-size: 15px;
-} */
 
 /*  CONTACT FORM  */
 
@@ -184,17 +157,22 @@ section header .title {
 	justify-content: center;
 	grid-gap: 10px;
 	width: 100%;
+	padding: 15px;
+}
+
+.contact-header {
+	padding: 30px;
 }
 
 .contact-main {
 	display: flex;
 	flex-direction: column;
-	/* align-content: space-between; */
 	margin: 10px;
+	padding: 10px;
 }
 
 .title .contact-title {
-	padding: 50px;
+	padding: 50px 50px 0px 50px;
 }
 
 label {
@@ -206,15 +184,36 @@ label {
 	margin: 5px;
 	width: 100%;
 }
+.contact input,
+textarea {
+	border-radius: 10px;
+	width: 75%;
+}
 
 #contact-thanks {
 	display: none;
 	font-family: 'Fira Sans', sans-serif;
 	font-style: italic;
 	font-size: 20px;
-	/* margin: 0;
-	line-height-step: 0; */
 }
+
+.social-media {
+	font-size: 20px;
+	font-style: bold;
+	font-weight: 600;
+}
+
+.social-media a {
+	color: #eb5e28;
+}
+
+.footer {
+	background-color: black;
+	font-size: 15px;
+	color: white;
+}
+
+/*  GO-to-top Button */
 
 #myTopBtn {
 	display: none; /* Hidden by default */

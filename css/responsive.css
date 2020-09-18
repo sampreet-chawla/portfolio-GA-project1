@@ -1,10 +1,21 @@
 /* RESPONSIVE DESIGN FOR TABLET */
 @media only screen and (min-width: 768px) {
-	body {
-		/* background-color: blue; */
+	/* NAV_BAR */
+	.navbar {
+		justify-content: space-between;
 	}
 
 	/* ABOUT ME */
+
+	.about-container {
+		grid-gap: 0px;
+	}
+
+	.about-main p {
+		font-size: 20px;
+		padding: 0 30px;
+	}
+
 	.extra-about {
 		display: block;
 	}
@@ -21,7 +32,7 @@
 	/* ALL PROJECTS */
 
 	.projects-container {
-		display: grid;		g
+		display: grid;
 		grid-gap: 20px;
 	}
 
@@ -35,7 +46,7 @@
 	}
 
 	.card {
-		box-shadow: 4px 4px 7px 2px rgba(0,0,0,0.4);
+		box-shadow: 4px 4px 7px 2px rgba(0, 0, 0, 0.4);
 	}
 
 	.card-img-top {
@@ -43,26 +54,52 @@
 		object-fit: cover;
 	}
 
-	
+	/* CONTACT */
 
-	/* .project-card {
-		display: grid;
-		grid-gap: 10px;
-		grid-template-areas: 'photo title' 'photo description' 'photo view';
-		grid-column-gap: 20px;
-		margin: 15px 10px 15px 10px;
-	} */
+	.contact-header {
+		padding-top: 100px;
+	}
 
-	/* .contact-body {
-		display: flex;
-	} */
+	.contact input,
+	textarea {
+		width: 50%;
+	}
+
+	.contact input,
+	textarea, p {
+		padding: 5px 10px;
+		margin: 10px;
+	}
 }
 
 /* RESPONSIVE DESIGN FOR DESKTOP */
 @media only screen and (min-width: 1024px) {
-	body {
-		/* background-color: rgb(111, 190, 111); */
+	/* HOME */
+	.home-article {
 	}
+
+	.home .title {
+		margin-top: 130px;
+		font-size: 100px;
+	}
+
+	.home .sub-title {
+		font-size: 70px;
+		margin-bottom: 50px;
+	}
+
+	.home .brand-statement {
+		font-size: 50px;
+		padding: 50px 50px;
+	}
+
+	/* ABOUT */
+	.about-main p {
+		font-size: 20px;
+		padding: 10px 30px 50px 30px;
+	}
+
+	/* ALL PROJECTS */
 
 	.projects-main {
 		display: grid;
@@ -95,4 +132,13 @@
 		grid-area: view;
 		padding-bottom: 0;
 	}
-}
+
+	/* Contact Form */
+
+	
+	
+	.contact input,
+	textarea, p {
+		padding: 5px 10px;
+		margin: 10px;
+	}

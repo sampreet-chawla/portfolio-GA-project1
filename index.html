@@ -36,17 +36,15 @@
         <link rel="stylesheet" href="css/responsive.css" />
         
         <!-- add icon link to the title -->
-        <!-- TODO Change to Personal Favicon -->
         <link rel = "icon" href =  
 "https://res.cloudinary.com/dreamer123/image/upload/v1600304224/Sampreet-SEIR_831-unit1-portfolio/skc-black_ycpz6h.png" 
         type = "image/x-icon"> 
 
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-black">
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-black" id="take-to-home">
 			<nav class="navbar navbar-expand-lg navbar-dark"></nav>
-            <!-- TODO Can include Logo here as the nav-bar brand -->
-			<a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dreamer123/image/upload/v1600306991/Sampreet-SEIR_831-unit1-portfolio/skc-white-transparent-2_ccztru.png" alt="Sampreet Logo" height="60px"/></a>
+            <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dreamer123/image/upload/v1600306991/Sampreet-SEIR_831-unit1-portfolio/skc-white-transparent-2_ccztru.png" alt="Sampreet Logo" height="60px"/></a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -62,15 +60,15 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#home"
+						<a class="nav-link" href="#take-to-home"
 							>Home <span class="sr-only">(current)</span></a
 						>
                     </li>
                    <li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link" href="#take-to-about">About</a>
                     </li>
                    <li class="nav-item">
-						<a class="nav-link" href="#project-carousel">Projects</a>
+						<a class="nav-link" href="#take-to-project-carousel">Projects</a>
                     </li>
                     <li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
@@ -86,19 +84,20 @@
 				<div id="particles-js">
 					<article class="home-article">								
 					<div class="home title-div">
-						<h1 class="home title">sampreet kaur chawla</h1>
+						<h1 class="home title">Sampreet K Chawla</h1>
 						<hr> 
 						<h3 class="home sub-title">web developer</h3>
 					</div>
 					<div class="home brand-div">
 						<h4 class="home brand-statement">a result-oriented and quality-focused <span class="red">web developer</span> with rich experience building websites and applications in React and Java technologies.</h4>
+						<a href="#" id="take-to-about"></a>
 					</div>
 					</article>
 				</div>
 			</section>
 			
 			<!-- ABOUT ME CONTAINER -->
-            <section class="about-container" id="about"> 
+            <section class="about-container"> 
 				<header class="about-header">				<h3 class="title about-title">About Me</h3>
 				</header>
 				<main class="about-main">
@@ -106,44 +105,22 @@
 					</p>
 					<p class="extra-about">I have 11years rich experience including elite companies like IBM and Cognizant, in Java web development and project management. After playing the role of full-time mother and house-hold manager, I resumed the coding career with a healthcare IT Solution provider startup as a backend senior developer. I am currently a student with General Assembly pursuing a Software Engineering Immersive course to build full-stack capabilities.</p>
 					<p class="extra-about">When I'm not coding, I like spending time with family and keeping myself fit. In my free time I like to volunteer at school and library.</p>
+					<a href="#" id="take-to-project-carousel"></a>
 				</main>	
 				<button id="myTopBtn" title="Go to top">&#8679;</button>			
 			</section>
 			
-			<section class="projects-carousel-container" id="project-carousel">
+			<section class="projects-carousel-container">
 				<header class="project-carousel-header">
 					<a name="project-carousel"></a>
 					<h3 class="title project-title">Projects</h3>
 				</header>
-				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">					
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
-						<!-- <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
+						<!--Dynamic elements added here -->						
 					</ol>
-				<div class="carousel-inner">
-					<!-- <div class="carousel-item active">
-					<div><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
-					<div class="carousel-caption">
-						<h5>First slide label</h5>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-					</div>
-					</div>
-					<div class="carousel-item">
-						<div>
-					<img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
-					<div class="carousel-caption">
-						<h5>Second slide label</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					</div>
-					<div class="carousel-item">
-					<div><img src="https://res.cloudinary.com/jkeohan/image/upload/v1582134376/Screen_Shot_2020-01-30_at_8.57.12_AM_cnrvug.png" alt="Quote of the Day picture" class="d-block w-100"></div>
-					<div class="carousel-caption">
-						<h5>Third slide label</h5>
-						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-					</div>
-					</div> -->
+				<div class="carousel-inner">	
+					<!-- Dynamic elements added here -->				
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -162,13 +139,15 @@
 					<h3 class="title projects-title">ALL Projects</h3>
 				</header>
 				<main class="projects-main">
+					<!--Dynamic Content goes here -->
 				</main>
             </section>
 
             <!-- CONTACT FORM -->
-            <section class="contact-container" id="contact"> 
+            <section class="contact-container" > 
 				<header class="contact-header">
-					<h3 class="title contact-title">Get In Touch</h3>
+					<a href="#" id="contact"></a> 
+					<h3 class="title contact-title">Please feel free to get in touch...</h3>
 					<h4 id="contact-thanks">Thanks</h4>
 					<a name="contact"></a>
 				</header>
@@ -190,19 +169,17 @@
 						</p>
 						<p class="contact submit">
 							<input type="submit" value="Submit" class="btn-submit">
-						</p>                
+						</p>     
+						<p><!-- Empty Para--></p>
+						         
+						<p class="social-media">You can also connect me via <a href="www.linkedin.com/in/sampreetchawla" target="_blank">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a> | <a href="#">Email <i class="fa fa-envelope" aria-hidden="true"></i></a> | <a href="https://github.com/sampreet-chawla/sampreet-chawla.github.io" target="_blank">Github <i class="fa fa-github-square" aria-hidden="true"></i></a></p>					
 					</form>
 				</main>
-				<!-- <div class="title contact-title"></div>
-				<div class="contact-thanks"><h4 id="contact-thanks">Thanks</h4></div>
-                <div class="contact-body">
-                    
-                </div> -->
             </section>
 
 		</main>
 
-		<footer>&copy; Sampreet K Chawla 2020</footer>
+		<footer class="footer">&copy; Sampreet K Chawla 2020</footer>
 
 		<!-- THE STYLES  -->
 		<!-- ******************************************** -->

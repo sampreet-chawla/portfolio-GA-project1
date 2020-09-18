@@ -1,14 +1,8 @@
-console.log('main.js');
-console.log('jQuery - ', $);
-
 let sheetAsJSON =
-	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json'; 
+	'https://spreadsheets.google.com/feeds/list/1PCS9xZV7bCEX0Onnkn6k4wbTPwxeKnLuKf8yjEsTEqQ/od6/public/values?alt=json';
 
 $.ajax({ url: sheetAsJSON })
 	.then((data) => {
-		console.log('This is data: ', data);
-		console.log('This is data: ', data.feed.entry[0].gsx$title.$t);
-
 		let projects = data.feed.entry.map((project) => {
 			return {
 				title: project.gsx$title.$t,
@@ -19,7 +13,6 @@ $.ajax({ url: sheetAsJSON })
 			};
 		});
 
-		console.log(' projects - ', projects);
 		return projects;
 	})
 	.then((projects) => {
@@ -46,22 +39,10 @@ const renderProjectCarousel = (projects) => {
 					</div>
 					</div>`);
 		$('.carousel-inner').append($carouselItem);
-		console.log('Project Carousel rendered...');
 	});
 };
 
 const renderAllProjects = (projects) => {
-	console.log('Rendering all projects...', projects);
-	// projects.forEach((project) => {
-	// 	const $article = $(`<article class="project-card">
-	// 					<div class="project-image"><img src="${project.image}" alt="${project.title} picture"></div>
-	// 					<p class="project-title" id="project-title" >${project.title}</p>
-	// 					<p class="project-description" id="project-description">${project.description}</p>
-	// 					<p class="project-view" id="project-view"><a href="${project.url}" target="_blank">View Here</a></p>
-	// 				</article>`);
-	// 	$('.projects-main').append($article);
-	// 	console.log('All Projects rendered...');
-	// });
 	projects.forEach((project) => {
 		const $article = $(
 			`<div class="card" style="width: 18rem;">
@@ -75,7 +56,6 @@ const renderAllProjects = (projects) => {
 		</div>`
 		);
 		$('.projects-main').append($article);
-		console.log('All Projects rendered...');
 	});
 };
 
@@ -96,56 +76,61 @@ $('form').on('submit', (event) => {
 	$(event.currentTarget).trigger('reset');
 });
 
+$('.navbar-collapse a').click(function () {
+	$collapseVal = $('.navbar-collapse').collapse();
+	$('.navbar-collapse').collapse('hide');
+});
+
 /////////////////////////
 // For Goto Top Button
-window.onscroll = function () {
-	scrollFunction();
-};
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		document.getElementById('myTopBtn').style.display = 'block';
-	} else {
-		document.getElementById('myTopBtn').style.display = 'none';
-	}
-}
-var $root = $('html, body');
-$(document).on('click', 'a[href^="#"]', function (event) {
-	event.preventDefault();
-	$root.animate({ scrollTop: $($.attr(this, 'href')).offset().top }, 800);
-});
-window.onclick = function (event) {
-	if (event.target == modal) {
-		modal.style.display = 'none';
-	}
-};
-$('#myTopBtn').click(function () {
-	$root.animate({ scrollTop: 0 }, 800);
-});
-$(() => {
-	var $scroller = $('#site-wrapper');
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		var target = this.hash;
-		var $target = $(target);
-		$scroller.stop().animate(
-			{
-				scrollTop:
-					$target.offset().top - $scroller.offset().top + $scroller.scrollTop(),
-			},
-			900,
-			'swing',
-			function () {
-				window.location.hash = target;
-			}
-		);
-	});
-});
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('myBtn');
-var span = document.getElementsByClassName('close')[0];
-btn.onclick = function () {
-	modal.style.display = 'block';
-};
-span.onclick = function () {
-	modal.style.display = 'none';
-};
+// window.onscroll = function () {
+// 	scrollFunction();
+// };
+// function scrollFunction() {
+// 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+// 		document.getElementById('myTopBtn').style.display = 'block';
+// 	} else {
+// 		document.getElementById('myTopBtn').style.display = 'none';
+// 	}
+// }
+// var $root = $('html, body');
+// $(document).on('click', 'a[href^="#"]', function (event) {
+// 	event.preventDefault();
+// 	$root.animate({ scrollTop: $($.attr(this, 'href')).offset().top }, 800);
+// });
+// window.onclick = function (event) {
+// 	if (event.target == modal) {
+// 		modal.style.display = 'none';
+// 	}
+// };
+// $('#myTopBtn').click(function () {
+// 	$root.animate({ scrollTop: 0 }, 800);
+// });
+// $(() => {
+// 	var $scroller = $('#site-wrapper');
+// 	$('a[href^="#"]').on('click', function (e) {
+// 		e.preventDefault();
+// 		var target = this.hash;
+// 		var $target = $(target);
+// 		$scroller.stop().animate(
+// 			{
+// 				scrollTop:
+// 					$target.offset().top - $scroller.offset().top + $scroller.scrollTop(),
+// 			},
+// 			900,
+// 			'swing',
+// 			function () {
+// 				window.location.hash = target;
+// 			}
+// 		);
+// 	});
+// });
+// var modal = document.getElementById('myModal');
+// var btn = document.getElementById('myBtn');
+// var span = document.getElementsByClassName('close')[0];
+// btn.onclick = function () {
+// 	modal.style.display = 'block';
+// };
+// span.onclick = function () {
+// 	modal.style.display = 'none';
+// };
