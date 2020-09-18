@@ -21,8 +21,6 @@ $.ajax({ url: sheetAsJSON })
 	});
 
 const renderProjectCarousel = (projects) => {
-	console.log('Rendering project carousel...', projects);
-
 	projects.forEach((project, index) => {
 		const itemActive = index === 0 ? ' active' : '';
 

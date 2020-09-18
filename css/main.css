@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-	/* border: 1px solid !important; */
 }
 
 body {
@@ -35,8 +34,6 @@ body main {
 
 .home-container {
 	background-color: black;
-	/* background-image: url('https://res.cloudinary.com/dreamer123/image/upload/v1600315307/Sampreet-SEIR_831-unit1-portfolio/black-background_jbztq8.png');
-	background-size: cover; */
 
 	color: #fffcf2;
 	text-align: center;
@@ -69,7 +66,6 @@ body main {
 }
 
 hr {
-	/* color: #fffcf2; */
 	background-color: #eb5e28;
 	padding-left: 35%;
 	width: 20%;
