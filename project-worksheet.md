@@ -16,14 +16,14 @@ As a part of GA SEIR -831 Unit1 - Project Portfolio
 
 This schedule will be used to keep track of my progress throughout the week and align with squad's expectations.
 
-| Day   | Deliverable                                  | Status     |
-| ----- | -------------------------------------------- | ---------- |
-| Day 1 | Project Description                          | Complete   |
-| Day 1 | Wireframes / Priority Matrix / Timeline      | Complete   |
-| Day 3 | Core Application Structure (HTML, CSS, etc.) | Complete   |
-| Day 4 | MVP & Bug Fixes                              | Complete   |
-| Day 5 | Final Touches                                | Complete   |
-| Day 5 | Present                                      | Incomplete |
+| Day   | Deliverable                                  | Status   |
+| ----- | -------------------------------------------- | -------- |
+| Day 1 | Project Description                          | Complete |
+| Day 1 | Wireframes / Priority Matrix / Timeline      | Complete |
+| Day 3 | Core Application Structure (HTML, CSS, etc.) | Complete |
+| Day 4 | MVP & Bug Fixes                              | Complete |
+| Day 5 | Final Touches                                | Complete |
+| Day 5 | Present                                      | Complete |
 
 ## Project Description
 
@@ -104,7 +104,8 @@ Wireframing Resources:
 
 ## Additional Libraries
 
--[Google API Fonts](https://developers.google.com/fonts/) -[Font Awesome](https://fontawesome.com/v4.7.0/icons/) for social icons
+- [Google API Fonts](https://developers.google.com/fonts/)
+- [Font Awesome](https://fontawesome.com/v4.7.0/icons/) for social icons
 
 - [jQuery](https://code.jquery.com/)
 - Bootstrap Components - [Navbar](https://getbootstrap.com/docs/4.5/components/navbar/), [Carousel](https://getbootstrap.com/docs/4.5/components/carousel/) and [Card](https://getbootstrap.com/docs/4.5/components/card/)
